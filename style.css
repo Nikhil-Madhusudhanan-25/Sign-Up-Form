@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    margin: 0px;
+}
+aside{
+    width:40%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.gray-backgnd{
+    background-color: rgb(240, 243, 245);
+}
+/* .heading-section,.button-section{
+   /*  display: inline-block; */
+    /* height: 37.5%;
+} */
+.heading-section,.form-section,.button-section{
+    padding:20px;
+}
+.heading-section>p{
+    width:60%;
+}
