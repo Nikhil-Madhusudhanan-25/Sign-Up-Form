@@ -18,17 +18,18 @@ aside{
 main{
     display: flex;
     flex-direction: column;
+    font-family: sans-serif;
 }
 
 .gray-backgnd{
     background-color: rgb(240, 243, 245);
 }
 /* .heading-section,.button-section{
-   /*  display: inline-block; */
-    /* height: 37.5%;
-} */
+    height: 37.5%;
+}  */
 .heading-section,.form-section,.button-section{
-    padding:20px;
+    padding:20px 20px 20px 30px;
+    box-sizing: border-box;
 }
 .heading-section>p{
     width:60%;
@@ -50,4 +51,16 @@ main{
     font-family: Norse-Bold,sans-serif;
     margin: auto 0px;
     font-size: 100px;
+}
+.heading-section{
+    /* font-size: 25px;
+    font-weight: 600; */
+     height: 37.5%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.heading-section, .form-section>p{
+    font-size: 25px;
+    font-weight: 600;
 }
