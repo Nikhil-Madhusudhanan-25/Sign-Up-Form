@@ -141,4 +141,7 @@ input:focus{
     .logo-text{
         font-size: 0px;
     }
+    aside{
+        flex-basis: 0px;
+    }
 }
