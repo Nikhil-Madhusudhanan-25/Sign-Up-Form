@@ -131,14 +131,13 @@ input:focus:invalid{
 input+span{
     position: absolute;
     top:48px;
-}
-input:focus:invalid+span::after{
     color: red;
+}
+input:not([type="password"]):focus:invalid+span::after{
     content:"Required field";
 }
-input[type="password"]:focus:invalid+span::after{
-    color: red;
-    content:"Min. 6 characters";
+input[type="password"]:focus:invalid+span::before{
+    content:"Min. 6 characters ";
 }
 @media (max-width:1280px) {
     .heading-section, .form-section>p{
