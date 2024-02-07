@@ -116,3 +116,7 @@ a{
     color:#596D48;
     font-weight: bolder;
 }
+input:focus{
+    outline:none;
+    border: 1.5px solid blue;
+}
