@@ -78,6 +78,7 @@ main{
     flex-direction: column;
     width: 38%;
     justify-content: space-between;
+    position: relative;
 }
 label{
     font-size: 13px;
@@ -123,6 +124,21 @@ a{
 input:focus{
     outline:none;
     border: 1.5px solid blue;
+}
+input:focus:invalid{
+    outline:1.5px solid red;
+}
+input+span{
+    position: absolute;
+    top:48px;
+}
+input:focus:invalid+span::after{
+    color: red;
+    content:"Required field";
+}
+input[type="password"]:focus:invalid+span::after{
+    color: red;
+    content:"Min. 6 characters";
 }
 @media (max-width:1280px) {
     .heading-section, .form-section>p{
