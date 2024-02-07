@@ -134,7 +134,7 @@ input+span{
     color: red;
 }
 input:not([type="password"]):focus:invalid+span::after{
-    content:"Required field";
+    content:"*Required";
 }
 input[type="password"]:focus:invalid+span::before{
     content:"Min. 6 characters ";
@@ -146,6 +146,9 @@ input[type="password"]:focus:invalid+span::before{
     }   
     input{
         font-size:13px;
+    }
+    input+span{
+        top:60px;
     }
 }
 @media (max-width:600px) {
